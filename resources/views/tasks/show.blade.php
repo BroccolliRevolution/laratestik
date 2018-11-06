@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('welcome')
 
 @section('content')
     {{$task->body}}
