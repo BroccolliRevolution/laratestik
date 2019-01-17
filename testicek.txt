@@ -1,11 +1,4 @@
 cavkokakavko
-<<<<<<< master
-dsa
-
-
-
-=======
->>>>>>> first one
 
 
 
