@@ -10,5 +10,4 @@ if (type == 'time') {
         }
         console.log('hehe')
     }
-    
 }
