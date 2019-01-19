@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function ($name = 'John') {
+    $person = new stdClass();
+    $person->age = 32;
+    $person->name = $name;
+    return $name;
+})->name('myTestik');
+
 Route::get('/tasks/{tasks}', 'TaskController@index');
 
 Route::get('/tasks2/{task}', function (Task $task) {
