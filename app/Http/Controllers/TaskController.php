@@ -17,6 +17,7 @@ class TaskController extends Controller
         $task = Task::find($id);
         $route = route('myTestik', ['name' => 'sdas']);
         $testik = 4545455;
+        
 //    return redirect()->route('myTestik', ['name' => 'sdas']);
 //    dd($route);
         return view('tasks.show', compact('task'));
