@@ -14,13 +14,17 @@ class TaskController extends Controller
      */
     public function index($id)
     {
-        $task = Task::find($id);
-        $route = route('myTestik', ['name' => 'sdas']);
-        $testik = 4545455;
-        
-//    return redirect()->route('myTestik', ['name' => 'sdas']);
-//    dd($route);
-        return view('tasks.show', compact('task'));
+//        $task = Task::find($id);
+//        $route = route('myTestik', ['name' => 'sdas']);
+//        $testik = 4545455;
+//
+////    return redirect()->route('myTestik', ['name' => 'sdas']);
+////    dd($route);
+///
+
+        $task = new \stdClass();
+        $task->body = 'cav';
+        return view('tasks.show', ['task' => $task]);
     }
 
     /**
