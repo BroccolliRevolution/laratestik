@@ -17,8 +17,8 @@ Route::get('/', function ($name = 'John') {
     $person = new stdClass();
     $person->age = 32;
     $person->name = $name;
-    return $name;
-})->name('myTestik');
+    return 'cav';
+});
 
 Route::get('/tasks/{tasks}', 'TaskController@index');
 
