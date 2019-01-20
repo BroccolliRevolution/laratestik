@@ -1,0 +1,27 @@
+{
+  "addons": [
+    "cleardb"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ],
+  "env": {
+    "CLEARDB_DATABASE_URL": {
+      "required": true
+    },
+    "DB_HOST": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "laratestik",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
